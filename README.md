@@ -9,11 +9,12 @@ This is a simple Sudoku solver implemented in Java using a backtracking algorith
    git clone https://github.com/abhijeetkakade1234/Sudoku-Solver.git
 2. Compile the Java files:
    ```sh
-   javac -d . Java-Sudoku-Solver/src/*.java
+   javac *.java
+   
 3. Run the program:
    ```sh
       java Main
-   ```
+
 4. Enter the initial Sudoku grid when prompted. Use '0' for empty cells.
 5. The program will display the solved Sudoku grid if a solution exists.
 
