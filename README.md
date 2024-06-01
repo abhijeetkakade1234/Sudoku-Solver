@@ -61,4 +61,4 @@ MIT License Copyright (c) 2024 Abhijeet  Kakade
 <img src="https://img.shields.io/badge/License-MIT-green">
    
 ## Flowchart
-<img src="img/flowchart.png" name="flowchart" height="900">
+<img src="img/flowchart.png" name="flowchart" height="1000">
