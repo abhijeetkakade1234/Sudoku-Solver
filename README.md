@@ -6,7 +6,7 @@ This is a simple Sudoku solver implemented in Java using a backtracking algorith
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/Java-Sudoku-Solver.git
+   git clone https://github.com/abhijeetkakade1234/Sudoku-Solver.git
 2. Compile the Java files:
    ```sh
    javac -d . Java-Sudoku-Solver/src/*.java
