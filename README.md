@@ -1,6 +1,6 @@
 <p align="center">
   <img src="img/Sudoku Solver.png" alt="Sudoku image" height="200"/><br>
-  <h2>Sudoku Solver in Java</h2>
+  <b>Sudoku Solver in Java</b>
 </p>
 
 This is a simple Sudoku solver implemented in Java using a backtracking algorithm.
