@@ -1,6 +1,9 @@
-# Sudoku Solver in Java
+<p align="center">
+  <img src="img/Sudoku Solver.png" alt="Sudoku image" height="200"/><br>
+  <b>Sudoku Solver in Java</b>
+</p>
 
-This is a simple Sudoku solver implemented in Java using a backtracking algorithm.
+  This is a simple Sudoku solver implemented in Java using a backtracking algorithm.
 
 ## How to Use
 
