@@ -1,4 +1,5 @@
-public class SudokuGrid {
+public class SudokuGrid 
+{
     private int[][] grid;
 
     public SudokuGrid() {
@@ -11,18 +12,23 @@ public class SudokuGrid {
 
     public int[][] getGrid() {
         // Return the current state of the grid
+        return grid;
     }
 
     public boolean solve() {
         // Implement the Sudoku solving algorithm
         // Return true if a solution is found, false otherwise
+        return false;
     }
 
     private boolean isValid(int row, int col, int num) {
         // Check if placing 'num' at grid[row][col] is valid
+        return true;
     }
 
     private boolean solveRecursive(int row, int col) {
         // Recursive function to solve the Sudoku puzzle
+
+        return false;
     }
 }
