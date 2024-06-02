@@ -3,7 +3,7 @@
   <b>Sudoku Solver in Java</b>
 </p>
 
-This is a simple Sudoku solver implemented in Java using a backtracking algorithm.
+  This is a simple Sudoku solver implemented in Java using a backtracking algorithm.
 
 ## How to Use
 
