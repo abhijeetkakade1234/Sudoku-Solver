@@ -28,7 +28,7 @@ public class SudokuGrid {
             throw new IllegalArgumentException("Invalid grid size");
         }
         // Copy the input grid to the class's grid attribute
-        this.grid =Arrays.copyOf(grid, grid.length);
+        this.grid = Arrays.copyOf(grid, grid.length);
     }
 
     /**
@@ -36,7 +36,7 @@ public class SudokuGrid {
      * @return A 9x9 integer array representing the current grid.
      */
     public int[][] getGrid() {
-        // TODO: Return the grid attribute
+        //  Return the grid attribute
         return grid;
     }
 
@@ -45,10 +45,9 @@ public class SudokuGrid {
      * @return True if a solution is found, false otherwise.
      */
     public boolean solve() {
-        // TODO: Implement the solving algorithm using solveRecursive
-        // TODO: Call solveRecursive starting from the first cell (0, 0)
-        // TODO: Return the result of solveRecursive
-        return false;
+        // Call solveRecursive starting from the first cell (0, 0)
+        // Return the result of solveRecursive
+        return solveRecursive(0, 0);
     }
 
     /**
@@ -59,9 +58,22 @@ public class SudokuGrid {
      * @return True if placing num in grid[row][col] is valid, false otherwise.
      */
     private boolean isValid(int row, int col, int num) {
-        // TODO: Check if num is already in the specified row
-        // TODO: Check if num is already in the specified column
-        // TODO: Check if num is already in the 3x3 subgrid
+        // Check if num is already in the specified row
+        for(int i = 0; i < 9; i++) {
+            if(grid[i][col] == num) return false;
+            }
+        // Check if num is already in the specified column
+        for (int i = 0; i < 9; i++) {
+            if(grid[row][i] == num) return false;
+        }
+        // Check if num is already in the 3x3 subgrid
+        int rowStart = row - row % 3;
+        int colStart = col - col % 3;
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                if(grid[rowStart + i][colStart + j] == num) return false;
+            }
+        }
         return true;
     }
 
@@ -72,7 +84,8 @@ public class SudokuGrid {
      * @return True if the Sudoku is solved, false if backtracking is required.
      */
     private boolean solveRecursive(int row, int col) {
-        // TODO: Check if we have reached the end of the grid (row == 9)
+        // Check if we have reached the end of the grid (row == 9)
+        if (row == 9) return true; // Base case: all cells are filled
         // TODO: If col == 9, move to the next row and reset col to 0
         // TODO: If the current cell is not empty (not 0), move to the next cell
         // TODO: Try placing numbers 1-9 in the current cell
