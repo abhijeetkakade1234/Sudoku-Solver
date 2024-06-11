@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 public class SudokuGrid {
     private int[][] grid;
 
@@ -6,7 +9,13 @@ public class SudokuGrid {
      * Initializes the grid to a default 9x9 empty grid.
      */
     public SudokuGrid() {
-        // TODO: Initialize the grid to a 9x9 array filled with zeros
+        // Initialized the grid to a 9x9 array filled with zeros 
+        grid = new int[9][9];
+        for (int row = 0; row < 9; row++) {
+            for (int col = 0; col < 9; col++) {
+                grid[row][col] = 0;
+            }
+        }
     }
 
     /**
@@ -14,8 +23,12 @@ public class SudokuGrid {
      * @param grid A 9x9 integer array representing the initial Sudoku puzzle.
      */
     public void setGrid(int[][] grid) {
-        // TODO: Validate the input grid (should be 9x9)
-        // TODO: Copy the input grid to the class's grid attribute
+        // Validate the input grid (should be 9x9)
+        if (grid.length != 9 || grid[0].length != 9) {
+            throw new IllegalArgumentException("Invalid grid size");
+        }
+        // Copy the input grid to the class's grid attribute
+        this.grid =Arrays.copyOf(grid, grid.length);
     }
 
     /**
