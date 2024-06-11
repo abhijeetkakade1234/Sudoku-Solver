@@ -20,6 +20,22 @@ public class Main {
                 @SuppressWarnings("unused")
                 int[][] solution = sudokuGrid.getGrid();
                 // Print or display the solution
+                for (int row = 0; row < 9; row++) 
+                {
+                    if (row % 3 == 0 && row != 0) 
+                    {
+                        System.out.println("-----------|-----------|-----------");
+                    }
+                    for (int col = 0; col < 9; col++) 
+                    {
+                        if (col % 3 == 0 && col != 0) 
+                        {
+                            System.out.print(" | ");
+                        }
+                        System.out.print(solution[row][col]);
+                    }
+                    System.out.println();
+                }
             } 
             else 
                 System.out.println("No solution exists.");
